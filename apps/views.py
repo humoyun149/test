@@ -1,11 +1,10 @@
 from django.shortcuts import render
 
-from apps.models import Friend
+from apps.models import People
 
 
 def index_views(request):
-    friends = Friend.objects.all()
     context = {
-        'friends': friends
+        'people': People.objects.all()
     }
     return render(request, 'apps/index.html', context)

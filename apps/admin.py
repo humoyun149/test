@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.models import Group, User
 
-from apps.models import Friend
+from apps.models import People
 
 
 #
@@ -30,8 +30,8 @@ from apps.models import Friend
 #     inlines = [PhotosStackedInline]
 #
 #
-@admin.register(Friend)
-class FriendAdmin(admin.ModelAdmin):
+@admin.register(People)
+class PeopleAdmin(admin.ModelAdmin):
     list_display = ('first_name', 'last_name', 'profession')
 
 
