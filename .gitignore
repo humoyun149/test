@@ -1,3 +1,6 @@
 .venv
 media
 .idea
+celerybeat-schedule.db
+locale
+media
