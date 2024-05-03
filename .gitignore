@@ -4,4 +4,4 @@ media
 celerybeat-schedule.db
 locale
 media
-apps/static
+apps/static/apps
