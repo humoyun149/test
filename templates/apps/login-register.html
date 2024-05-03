@@ -507,7 +507,7 @@
                             </p>
                         {% endfor %}
                     </div>
-                    <form action="{% url 'register_view' %}" method="POST">
+                    <form action="{% url 'register' %}" method="POST">
                         {% csrf_token %}
                         <div class="login-form">
                             <h4 class="login-title">Register</h4>

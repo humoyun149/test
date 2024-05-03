@@ -1,10 +1,8 @@
 from django.contrib import admin
-from django.contrib.auth.models import Group, User
 
-from apps.models import Blog, Category
-
-admin.site.register(Blog)
-admin.site.register(Category)
+from apps.models import People
 
 
-admin.site.unregister(Group)
+@admin.register(People)
+class PeopleAdmin(admin.ModelAdmin):
+    pass

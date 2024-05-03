@@ -1,15 +1,12 @@
 from django.urls import path
 
 from apps import views
-from apps.views import BlogListView
 
 urlpatterns = [
-    path('home/', views.HomeView.as_view(), name='blog_list'),
-    path('products', views.BlogListView.as_view(), name='product-list'),
-    path('detail/<int:pk>/', views.detail_view, name='detail_view'),
+    path('', views.PeopleListView.as_view(), name='index_view'),
     path('register/', views.register_view, name='register_view'),
-    path('', views.CustomLoginView.as_view(), name='login_view'),
+    path('login/', views.UserLoginView.as_view(), name='login_view'),
+    path('detail/<int:pk>/', views.detail_view, name='detail_view'),
+    path('send/', views.send_email_to_user, name='logout_page'),
+
 ]
-
-
-
